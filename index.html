@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محلل العملات الرقمية - خالد دراغة</title>
+    <meta name="description" content="تحليل العملات الرقمية مع توصيات للتداول" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محلل العملات الرقمية - خالد دراغة</title>
+    <meta name="description" content="تحليل العملات الرقمية مع توصيات للتداول" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+  <body>
+    <div id="app" class="min-h-screen bg-gradient">
+      <div class="container">
+        <h1 class="title">محلل العملات الرقمية</h1>
+        
+        <div class="grid">
+          <!-- Crypto List -->
+          <div class="crypto-list">
+            <div class="search-container">
+              <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="بحث عن عملة..."
+                class="search-input"
+              />
+              <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <div id="pairsList" class="pairs-list"></div>
+          </div>
+
+          <!-- Signal Card -->
+          <div id="signalCard" class="signal-card">
+            <div id="loadingIndicator" class="loading hidden">جاري التحميل...</div>
+            <div id="errorMessage" class="error hidden"></div>
+            <div id="signalContent" class="signal-content hidden"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© <span id="currentYear"></span> جميع الحقوق محفوظة للسيد خالد دراغة</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
